@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+
+    <title>login</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- loginsection -->
+      <div class="loginside" id="loginsides">
+        <h1>LOGIN</h1>
+        <p>How to i get started lorem ipsum dolor at?</p>
+        <div class="textfield">
+          <img src="/img/Vector.png" alt="" />
+          <input type="text" placeholder="username" />
+        </div>
+        <div class="textfield">
+          <img src="/img/Vector1.png" alt="" />
+          <input type="password" placeholder="password" />
+        </div>
+
+        <button class="btn">Login Now</button>
+        <p id="text">
+          <b>Login</b> with Others or <button id="signup" onclick="moveDiv()">Signup</button>
+        </p>
+
+        <button class="loginbtn">
+          <img src="img/google 1.png" alt="" />
+          <p>Login with <b>google</b></p>
+        </button>
+
+        <button class="loginbtn">
+          <img src="img/facebook 1.png" alt="" />
+          <p>Login with <b>facebook</b></p>
+        </button>
+      </div>
+
+      <!-- reagister -->
+      <div class="registerside" id="regform">
+        <h1>REGISTER</h1>
+        <p>How to i get started lorem ipsum dolor at?</p>
+        <div class="textfield">
+          <img src="/img/Vector.png" alt="" />
+          <input type="text" placeholder="Email" />
+        </div>
+        <div class="textfield">
+          <img src="/img/Vector1.png" alt="" />
+          <input type="password" placeholder="password" />
+        </div>
+
+        <button class="btn">Sign in</button>
+        <button id="reg" onclick="regmove()">back to login page</button>
+      </div>
+
+      <!-- imgsection -->
+
+      <div class="imgsection">
+        <div class="card">
+          <h1>Very good works are waiting for you Login Now!!!</h1>
+          <div>
+            <img
+              src="/img/63a7dac0f8d7804846e69e43b0fb9878-removebg.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    var loginform=document.getElementById("loginsides");
+    var regform=document.getElementById("regform");
+
+    function moveDiv(){
+      loginform.style.transform="translateX(-100%)";
+      regform.style.transform="translateX(-100%)";
+
+    }
+    function regmove(){
+      loginform.style.transform="translateX(0%)";
+      regform.style.transform="translateX(0%)";
+
+    }
+
+  </script>
+</html>
